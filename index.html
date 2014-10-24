@@ -17,18 +17,18 @@
         background-attachment: fixed;
       }
 
-      content {
+      body > section:nth-child(1) {
         height: 100%;
-        min-height: 640px;
+        min-height: 720px;
       }
 
-      content h1 {
+      body > section:nth-child(1) h1 {
         font-size: 10em;
         color: white;
         text-shadow: 0 0.05em 0.05em rgba(150, 150, 150, 1);
       }
 
-      content p {
+      body > section:nth-child(1) p {
         font-size: 3em;
         color: white;
         text-shadow: 0 0.10em 0.25em rgba(150, 150, 150, 1);
@@ -37,10 +37,10 @@
     </style>
 
   </head>
-  <body layout>
-    <content column layout="fill-first justify-start">
+  <body layout="center">
+    <section column layout="fill-first">
       <h1 content layout="center">ÅNGSTURM</h1>
-      <p layout="center">Not your mama's web framework.</p>
-    </content>
+      <p content layout="center">Not your mama's web framework.</p>
+    </section>
   </body>
 </html>
