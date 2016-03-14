@@ -934,30 +934,6 @@
     }
 
   ])
-  // Set up theme and preload inspector templates
-  .run([
-
-    'editableOptions',
-    '$templateCache',
-    'viiModulePath',
-    'formFieldsTemplate',
-
-  function (
-
-    editableOptions,
-    $templateCache,
-
-    modulePath,
-    formFieldsTemplate
-
-  ) {
-
-    editableOptions.theme = 'default';
-
-    // preload templates
-    $templateCache.get(modulePath + formFieldsTemplate);
-
-  }])
 
   // Add the debug-specific jsonEditor direction
   // TODO: move elsewhere
