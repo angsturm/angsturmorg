@@ -557,7 +557,7 @@
           },
 
           pattern: function (size) {
-            var image = '/images/bg/' + this.image;
+            var image = 'images/bg/' + this.image;
 
             return this._style(image, size);
           },
@@ -601,7 +601,7 @@
         validateFunctions: '=',
         submitted: '='
       },
-      templateUrl: '/views/inspectors/fields.html'
+      templateUrl: 'views/inspectors/fields.html'
     };
   }]);
 
